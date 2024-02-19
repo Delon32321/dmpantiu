@@ -1,0 +1,300 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%; /* Ensure the html element covers full height */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0; /* Light background for a minimalistic look */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure body takes at least the viewport height */
+    margin: 0; /* Added to remove any default margin */
+}
+
+
+header, nav, main, footer {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    padding-bottom: 5px;
+    transition: border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #007bff; /* Subtle neon effect */
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.btn {
+    background: transparent;
+    color: #007bff; /* Neon blue for contrast */
+    border: 2px solid #007bff; /* Wireframe-style border */
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Add to the existing styles.css content */
+
+.experience-entry {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #007bff; /* Neon blue accent */
+}
+
+.experience-entry:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Add these styles to the existing styles.css content */
+
+.contact-info {
+    background-color: #f0f0f0; /* Light background for contrast */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h1 {
+    color: #007bff; /* Neon blue for headings */
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #007bff; /* Neon blue for links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.publication-list article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 10px; /* Adjust as needed for more space */
+    margin-top: 40px;
+}
+
+
+.publication-list h2 {
+    margin-bottom: 10px;
+}
+
+.expertise ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expertise li:before {
+    content: "•";
+    color: #007bff; /* Neon blue for bullet points */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+.article-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.article-img {
+    width: 200px; /* Adjust based on your preference */
+    margin-right: 20px;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+.gif-img {
+    width: 300px; /* Adjust based on your preference */
+    height: 200px;
+    margin-top: 10px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.text-content {
+    flex: 1; /* Makes the text content grow to take up the available space */
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.skill, .skills a {
+    background-color: #8ea1f5;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    transition: opacity 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none; /* Removes underline from all skill elements */
+}
+
+.skills a:hover {
+    opacity: 0.7; /* Changes opacity on hover for links only */
+}
+
+.authors {
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.publication-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.research-gate {
+    text-align: center; /* Center the button container */
+    margin-top: 20px; /* Add some space above the button */
+}
+
+.rg-button {
+    background-color: #8ea1f5; /* ResearchGate brand color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.rg-button:hover {
+    opacity: 0.7;
+}
+
+
+.details {
+    display: none;
+    padding: 15px; /* Increased padding for better readability */
+    background-color: #f9f9f9; /* Light grey background for a subtle distinction */
+    border: 1px solid #ddd; /* Soft border color */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-size: 16px; /* Slightly larger font size */
+    line-height: 1.5; /* Increased line height for better readability */
+    color: #333; /* Slightly darker text color for contrast */
+}
+
+.details p {
+    margin-bottom: 10px; /* Adds space between paragraphs */
+    text-align: justify; /* Justifies the text for a cleaner look */
+}
+
+.details p:first-child {
+    font-weight: bold; /* Emphasizes the first paragraph */
+}
+
+.details b {
+    display: block; /* Makes <b> and <i> elements block-level for distinction */
+    margin-bottom: 5px; /* Adds spacing below for separation */
+}
+
+
+
+#experience-section .experience-entry {
+    border-left: 5px solid #9b4bb7;
+}
+
+#expedition-section .experience-entry {
+    border-left: 5px solid #ae99d6;
+}
+
+#education-section .experience-entry {
+    border-left: 5px solid #d3d3f2;
+}
+
+#conferences-section .experience-entry {
+    border-left: 5px solid #6aa1da;
+}
+
+#courses-section .experience-entry {
+    border-left: 5px solid #97e6ea;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 0 80px; /* Increase padding for larger screens */
+    }
+}
+
+.profile-photo {
+    width: 150px; /* Set the width of the photo */
+    height: 150px; /* Maintain aspect ratio for the circle */
+    border-radius: 50%; /* Creates the circular shape */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block; /* Changes the image to block to center it */
+    margin: 0 auto 20px; /* Centers the image and adds space below it */
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
